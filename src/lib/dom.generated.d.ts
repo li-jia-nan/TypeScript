@@ -26367,6 +26367,12 @@ declare namespace CSS {
     function vmin(value: number): CSSUnitValue;
     /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSS/vw) */
     function vw(value: number): CSSUnitValue;
+    function registerProperty(propertyDefinition: {
+        name: string;
+        syntax?: string;
+        inherits: boolean;
+        initialValue?: string;
+    }): void;
 }
 
 declare namespace WebAssembly {
